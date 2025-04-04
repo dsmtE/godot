@@ -564,9 +564,9 @@ float msdf_median(float r, float g, float b, float a) {
 }
 
 #if !defined(USE_ATTRIBUTES) && !defined(USE_PRIMITIVE)
-	vec4 region_rect = read_draw_data_src_rect;
+vec4 region_rect = read_draw_data_src_rect;
 #else
-	vec4 region_rect = vec4(0.0, 0.0, 1.0 / read_draw_data_color_texture_pixel_size);
+vec4 region_rect = vec4(0.0, 0.0, 1.0 / read_draw_data_color_texture_pixel_size);
 #endif
 
 void main() {
